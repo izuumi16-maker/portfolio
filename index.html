@@ -1,23 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Prasanth Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarita Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-<section class="hero">
-    <div class="left">
-        <h4>HI THERE!</h4>
-        <h1>I'M <span>PRASANTH</span></h1>
-        <p>Web Developer | Designer</p>
-        <button>More About Me</button>
-    </div>
+<div class="container">
 
-    <div class="right">
-        <img src="profile.jpg" alt="profile">
-    </div>
-</section>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="">
+            <h3>Sarita</h3>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
 
+    <main class="content">
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h4>HI THERE!</h4>
+                <h1>I'M <span>SARITA</span></h1>
+                <p>Graphic Designer / Photographer</p>
+                <button>More About Me</button>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
+                <div class="floating-icons">
+                    <i class="fas fa-home"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-briefcase"></i>
+                    <i class="fas fa-images"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <p>I'm Sarita Smith, Graphic Designer / Photographer.</p>
+
+            <div class="stats">
+                <div class="stat-box">10+<span>Years Experience</span></div>
+                <div class="stat-box">450<span>Projects</span></div>
+                <div class="stat-box">65<span>Awards</span></div>
+                <div class="stat-box">300+<span>Clients</span></div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume">
+            <h2>RESUME</h2>
+            <div class="resume-grid">
+                <div>
+                    <h4>Education</h4>
+                    <p>Bachelor in Design</p>
+                </div>
+                <div>
+                    <h4>Experience</h4>
+                    <p>Senior Graphic Designer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+
+            <div class="filters">
+                <button onclick="filterSelection('all')">All</button>
+                <button onclick="filterSelection('design')">Print</button>
+                <button onclick="filterSelection('web')">Web</button>
+                <button onclick="filterSelection('photo')">Photography</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="item design"><img src="https://picsum.photos/300/200?1"></div>
+                <div class="item web"><img src="https://picsum.photos/300/200?2"></div>
+                <div class="item photo"><img src="https://picsum.photos/300/200?3"></div>
+                <div class="item design"><img src="https://picsum.photos/300/200?4"></div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonial-box">
+                <p>"Amazing designer. Highly recommended."</p>
+                <strong>- Client</strong>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
